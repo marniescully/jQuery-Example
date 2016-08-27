@@ -1,0 +1,422 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Christmas Shopping Budget Utility</title>
+	<link rel="stylesheet" href="css/styles.css" type="text/css">
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/south-street/jquery-ui.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+	<script src="http://jquery.bassistance.de/validate/jquery.validate.js"></script>
+	<script src="http://jquery.bassistance.de/validate/additional-methods.js"></script>
+</head>
+
+<body>
+	<!-- Div Around the whole page -->
+	<div id='wrapper'>	
+		
+		<!-- Header -->
+			<header>
+				<h1>Christmas Shopping Budget Utility</h1>
+			</header>
+
+		<!-- Left Column with all the items to buy and budget -->
+			<div id='budget'>
+				
+				<p><strong>Your budget: </strong> 
+					
+					<input type='text' name='budget'>
+					
+					<!-- Start Over Button -->
+					<input type='button' id='startOver' value='Start Over'>
+					
+				</p>
+
+			<!-- Accordion the displays items to select -->
+				<div id="accordion">
+					
+					<h3>Toys for Girls</h3>
+						<div>
+							<div id='girl_1' class='items'>
+								
+								<img class='gift' src='/images/items/girls_headband.jpg' alt='Fashion Headbands'>
+
+								<input type='checkbox' class='checkbox'>
+								
+								<a href='http://tinyurl.com/nw9f4u3' target='_blank'>
+									<p class='desc'>Headbands</p>
+								</a>
+							
+								<p class='price'>14.99</p>
+								
+							</div>
+
+							<div id='girl_2' class='items'>
+								
+								<img class='gift' src='/images/items/girls_doll.jpg' alt='Baby Doll'>
+								
+								<input type='checkbox' class='checkbox'>
+
+								<a href='http://tinyurl.com/nonratc' target='_blank'>
+									<p class='desc'>Baby Doll</p>
+								</a>
+
+								<p class='price'>26.22</p>
+								
+							</div>
+
+							<div id='girl_3' class='items'>
+								
+								<img class='gift' src='/images/items/girls_journal.jpg' alt='Journal'>
+								
+								<input type='checkbox' class='checkbox'>
+
+								<a href='http://tinyurl.com/orwdw2z' target ='_blank'>
+									<p class='desc'>Journal</p>
+								</a>
+
+								<p class='price'>19.97</p>
+
+							</div>
+
+							<div id='girl_4' class='items'>
+								
+								<img class='gift' src='/images/items/girls_kitty_watch.jpg' alt='Hello Kitty Watch'>
+								
+								<input type='checkbox' class='checkbox'>
+
+								<a href='http://tinyurl.com/p9necwy' target='_blank'>
+									<p class='desc'>Hello Kitty Watch</p>
+								</a>
+								<p class='price'>3.29</p>
+
+							</div>
+
+							<div id='girl_5' class='items'>
+								
+								<img class='gift' src='/images/items/girls_phone.jpg' alt='Disney SmartPhone'>
+
+								<input type='checkbox' class='checkbox'>
+
+								<a href='http://tinyurl.com/pbmsj29' target='_blank'>
+									<p class='desc'>Disney Phone</p>
+								</a>
+								
+								<p class='price'>23.93</p>
+
+							</div>
+
+							<div id='girl_6' class='items'>
+								
+								<img class='gift' src='/images/items/girls_castle.jpg' alt='Princess Castle'>
+								
+								<input type='checkbox' class='checkbox'>
+
+								<a href='http://tinyurl.com/q923y74' target='_blank'>
+									<p class='desc'>Princess Castle</p>
+								</a>
+								<p class='price'>27.25</p>
+
+							</div>
+						
+						</div>
+
+					<h3>Toys for Boys</h3>
+						<div>
+							<div id='boy_1' class='items'>
+								
+								<img class='gift' src='/images/items/boys_racers.jpg' alt='Racers'>
+								
+								<input type='checkbox' class='checkbox'>
+								
+								<a href='http://tinyurl.com/pdumvha' target='_blank'>
+									<p class='desc'>Racers</p>
+								</a>
+								<p class='price'>24.95</p>
+
+							</div>
+
+							<div id='boy_2' class='items'>
+								
+								<img class='gift' src='/images/items/boys_Vtech_dinos.jpg' alt='Dinos'>
+								
+								<input type='checkbox' class='checkbox'>
+								
+								<a href='http://tinyurl.com/oqvw74o' target='_blank'>
+									<p class='desc'>Dinos</p>
+								</a>
+								
+								<p class='price'>10.50</p>
+
+							</div>
+
+							<div id='boy_3' class='items'>
+								
+								<img class='gift' src='/images/items/boys_drums.jpg' alt='Drums'>
+								
+								<input type='checkbox' class='checkbox'>
+								
+								<a href='http://tinyurl.com/o7o49gw' target='_blank'>
+									<p class='desc'>Drums</p>
+								</a>
+								<p class='price'>20.99</p>
+
+							</div>
+
+							<div id='boy_4' class='items'>
+								
+								<img class='gift' src='/images/items/boys_vader_watch.jpg' alt='Darth Vader Watch'>
+								
+								<input type='checkbox' class='checkbox'>
+
+								<a href='http://tinyurl.com/noxzj3t' target='_blank'>
+									<p class='desc'>Darth Vader Watch</p>
+								</a>
+								
+								<p class='price'>16.59</p>
+
+							</div>
+
+							<div id='boy_5' class='items'>
+								
+								<img class='gift' src='/images/items/boys_car.jpg' alt='Blue Race Car'>
+								
+								<input type='checkbox' class='checkbox'>
+
+								<a href='http://tinyurl.com/nu9f8vw' target='_blank'>
+									<p class='desc'>Blue Race Car</p>
+								</a>
+								
+								<p class='price'>8.99</p>
+
+							</div>
+
+							<div id='boy_6' class='items'>
+								
+								<img class='gift' src='/images/items/boys_rockem_sockem.jpg' alt='Rockem Sockem Robots'>
+								
+								<input type='checkbox' class='checkbox'>
+
+								<a href='http://tinyurl.com/pyzc3l4' target='_blank'>
+									<p class='desc'>Rockem Sockem Robots</p>
+								</a>
+								
+								<p class='price'>13.49</p>
+
+							</div>
+
+						</div>
+
+					<h3>Gifts for Mom</h3>
+						<div>
+							<div id='mom_1' class='items'>
+								
+								<img class='gift' src='/images/items/mom_karaoke.jpg' alt='Karaoke Machine'>
+								
+								<input type='checkbox' class='checkbox'>
+
+								<a href='http://tinyurl.com/oqfb9vw' target='_blank'>
+									<p class='desc'>Karaoke Machine</p>
+								</a>
+								
+								<p class= 'price'>69.99</p>
+
+							</div>
+
+							<div id='mom_2' class='items'>
+								
+								<img class='gift' src='/images/items/mom_apron.jpg' alt='Wonder Woman Apron'>
+								
+								<input type='checkbox' class='checkbox'>
+
+								<a href='http://tinyurl.com/or739jr' target='_blank'>
+									<p class='desc'>Wonder Woman Apron</p>
+								</a>
+
+								<p class='price'>15.95</p>
+
+							</div>
+
+							<div id='mom_3' class='items'>
+								
+								<img class='gift' src='/images/items/mom_spa_basket.jpg' alt='Spa in a Basket'>
+								
+								<input type='checkbox' class='checkbox'>
+								
+								<a href='http://tinyurl.com/pyx7vkx' target='_blank'>
+									<p class='desc'>Spa in a basket</p>
+								</a>
+								
+								<p class='price'>39.99</p>
+
+							</div>
+
+							<div id='mom_4' class='items'>
+								
+								<img class='gift' src='/images/items/mom_bracelet.jpg' alt='Bracelet'>
+								
+								<input type='checkbox' class='checkbox'>
+
+								<a href='http://tinyurl.com/np8mcxq' target='_blank'>
+									<p class='desc'>Bracelet</p>
+								</a>
+								<p class='price'>9.45</p>
+
+							</div>
+
+							<div id='mom_5' class='items'>
+								
+								<img class='gift' src='/images/items/mom_cat_ring_holder.jpg' alt='Cat Ring Holder'>
+								
+								<input type='checkbox' class='checkbox'>
+
+								<a href='http://tinyurl.com/naenrzy' target='_blank'>
+									<p class='desc'>Cat Ring Holder</p>
+								</a>
+
+								<p class='price'>9.99</p>
+
+							</div>
+
+							<div id='mom_6' class='items'>
+								
+								<img class='gift' src='/images/items/mom_panda.jpg' alt='Panda Slippers'>
+								
+								<input type='checkbox' class='checkbox'>
+
+								<a href='http://tinyurl.com/op9tyn5' target='_blank'>
+									<p class='desc'>Panda Slippers</p>
+								</a>
+									
+								<p class='price'>7.56</p>
+
+							</div>
+						
+						</div>
+
+					<h3>Gifts for Dad</h3>
+						<div>
+							<div id='dad_1' class='items'>
+								
+								<img class='gift' src='/images/items/dad_manicure_set.jpg'  alt='Manicure Set'>
+								
+								<input type='checkbox' class='checkbox'>
+
+								<a href='http://tinyurl.com/p4oqkyg' target='_blank'>
+									<p class='desc'>Manicure Set</p>
+								</a>
+
+								<p class='price'>24.99</p>
+
+							</div>
+
+							<div id='dad_2' class='items'>
+								
+								<img class='gift' src='/images/items/dad_mug.jpg' alt='Duct Tape Coffee Mug'>
+								
+								<input type='checkbox' class='checkbox'>
+
+								<a href='http://tinyurl.com/ou93tky' target='_blank'>
+									<p class='desc'>Duct Tape Mug</p>
+								</a>
+
+								<p class='price'>8.99</p>
+
+							</div>
+
+							<div id='dad_3' class='items'>
+								
+								<img class='gift' src='/images/items/dad_slippers.jpg' alt='Slippers'>
+								
+								<input type='checkbox' class='checkbox'>
+								
+								<a href='http://tinyurl.com/p9qu9a7' target='_blank'>
+									<p class='desc'>Slippers</p>
+								</a>
+								
+								<p class='price'>24.50</p>
+
+							</div>
+
+							<div id='dad_4' class='items'>
+								
+								<img class='gift' src='/images/items/dad_cuflinks.jpg' alt='Cufflinks'>
+								
+								<input type='checkbox' class='checkbox'>
+
+								<a href='http://tinyurl.com/o3xxh26' target='_blank'>
+									<p class='desc'>Cufflinks</p>
+								</a>
+
+								<p class='price'>14.88</p>
+
+							</div>
+
+							<div id='dad_5' class='items'>
+								
+								<img class='gift' src='/images/items/dad_man_cave_sign.jpg' alt='Man Cave Sign'>
+								
+								<input type='checkbox' class='checkbox'>
+								
+								<a href='http://tinyurl.com/no4p5q9' target='_blank'>
+									<p class='desc'>Man Cave Sign</p>
+								</a>
+
+								<p class='price'>6.75</p>
+
+							</div>
+
+							<div id='dad_6' class='items'>
+								
+								<img class='gift' src='/images/items/dad_shaver.jpg' alt='Shaver'>
+								
+								<input type='checkbox' class='checkbox'>
+								
+								<a href='http://tinyurl.com/ngef8zm' target='_blank'>
+									<p class='desc'>Shaver</p>
+								</a>
+
+								<p class='price'>74.99</p>
+
+							</div>
+						
+						</div>
+				</div>
+				
+				<br>
+				
+			</div>
+			
+		<!-- Middle Column with the presents and tree -->
+			<div id ='tree'>
+				
+				<div id='tree-background'>
+					<div id='canvas'>
+					</div>
+				</div>
+
+				<p>Arrange your gifts under the tree.</p>
+			
+			</div>
+
+		<!-- Right side with the totals -->
+			<div id='totals'>
+				
+				<p id='spent'></p>
+				<p id='left'></p>
+
+			</div>
+			
+	</div>
+
+	<!-- Audio of sleigh bells every time a gift is selected -->
+	<audio id='sleigh_bells'>
+		
+		<source src='http://www.shockwave-sound.com/sound-effects/christmas-sounds/JINGLES.WAV' type='audio/x-wav'/>
+
+	</audio>
+
+	<script src="js/scripts.js"></script>
+
+</body>
+</html>

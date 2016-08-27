@@ -1,0 +1,145 @@
+	* {
+		font-family: helvetica, verdana;
+		color: #333;
+		font-size: 16px;
+	}
+
+/* Main Section around columns-------------------------------- */
+	
+	#wrapper {
+		width: 95%;
+		margin: 0px auto;
+	}
+
+/* Header ---------------------------------------------------- */
+	
+	header {
+		text-align: center;
+		position: relative;
+	}
+
+	header h1 {
+		padding: 10px 0px;
+		color: #fff;
+		background-color: #459e00;
+		text-shadow: 4px 4px 8px #000;
+		font-size: 2em;
+	}
+
+/* End of Header ---------------------------------------------- */
+
+/* Left column ------------------------------------------------ */
+	
+	#budget {
+		width: 450px;
+		margin-right: 40px;
+		float: left;
+		margin-top: 0px;
+	}
+
+	.in_the_red {
+		color: red;
+	}
+
+/* This is the jQuery widget that displays the gifts to select-- */
+	
+	#accordion {
+		width: 100%;
+		margin-top: 20px;
+	}
+
+	.items {
+		width: 110px;
+		height: 125px;
+		float: left;
+		margin-bottom: 10px;
+		background-color: #fff;
+		margin-right: 5px;
+		border: 1px solid #ccc;
+	}
+
+	.desc, .price {
+		font-size: 10px;
+		margin-top: 0px;
+		margin-left: 5px;
+		padding-right: 3px;
+		
+	}	
+
+	.price {
+		font-style: italic;
+		margin-top: -10px;
+	}
+
+	.desc {
+		color: red;
+	}
+	
+	.checkbox {
+		float: right;
+		text-shadow: 1px 1px 1px rgba(0, 0, 0, .5);  
+	    color: #f3f3f3;  
+	    text-align: center;  
+	    width: 20px; 
+	    height: 20px;
+	}
+	
+/* End of Left column ------------------------------------------ */
+
+/* Middle column ----------------------------------------------- */
+	
+	#tree {
+		width: 400px;
+		float: left;
+		text-align: center;
+		margin-bottom: 100px;
+	}
+
+/* Tree Image---------------------------------------------------- */
+	
+	#tree-background {
+		background-image: url('/images/christmastree.png');
+		background-repeat: no-repeat;
+		height: 437px;
+		width: 298px;
+		margin: 0px auto;
+	}
+
+/* The canvas is where all of the presents lay under the tree ---- */
+	
+	#canvas {
+		width: 420px;
+		height: 160px;
+		position: relative;
+		top: 410px;
+		left: -50px;
+		z-index: 1; 
+		overflow: hidden;
+	}
+
+	.gift, .drag_gift {
+		width: 80px;
+		height: 80px;
+	}
+
+	.drag_gift {
+		position: absolute;
+		top: 20px;
+		left: 0px;
+		cursor: move;
+	}
+
+/* End of Middle column ------------------------------------------- */
+
+/* Right Column --------------------------------------------------- */
+
+	#totals {	
+		margin-top: 20px;
+	}
+	
+/* End of Right Column -------------------------------------------- */
+
+/* End of Main Section -------------------------------------------- */
+
+
+
